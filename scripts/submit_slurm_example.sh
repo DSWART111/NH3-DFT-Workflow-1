@@ -7,11 +7,11 @@
 #SBATCH --output=qe_%j.out
 #SBATCH --error=qe_%j.err
 
-# Load QE module on your cluster if needed, e.g.:
+# Load QE (adjust to your cluster)
 # module load qe/6.8
 
 PWSCF=pw.x
-INPUT=ru_bulk_example.in   # change if your input filename differs
+INPUT=ru_bulk_example.in
 OUTPUT=ru_bulk_example.out
 
 srun $PWSCF < $INPUT > $OUTPUT
