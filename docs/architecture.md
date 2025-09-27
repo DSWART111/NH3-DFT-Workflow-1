@@ -1,6 +1,6 @@
-# Workflow architecture (quick note)
+# Workflow architecture
 
-- Python/ASE notebooks/scripts generate structures and QE input files.
-- Jobs run locally, on Google Colab (prep), or on HPC (QE).
-- Parsers collect lattice parameters/energies into CSV/Excel.
-- Figures produced via matplotlib for publication.
+- Python/ASE scripts generate structures and QE input files
+- Jobs run locally, in Google Colab, or on HPC (SLURM submission)
+- Results collected into CSV/Excel for analysis
+- Figures generated via matplotlib for publication
